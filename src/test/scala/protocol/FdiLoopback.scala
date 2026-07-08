@@ -6,9 +6,9 @@ import chisel3.util._
 import interfaces._
 import org.chipsalliance.cde.config.{Field, Parameters, Config}
 import chisel3.experimental.hierarchy.{Definition, Instance, instantiable, public}
-import freechips.rocketchip.diplomacy._
-import freechips.rocketchip.tilelink._
-import freechips.rocketchip.devices.tilelink.{TLTestRAM}
+// import freechips.rocketchip.diplomacy._ // SKIP_TILELINK
+// import freechips.rocketchip.tilelink._ // SKIP_TILELINK
+// import {TLTestRAM} // SKIP_TILELINK
 
 // LatencyPipe from rocket-chip
 // https://github.com/chipsalliance/rocket-chip/blob/master/src/main/scala/util/LatencyPipe.scala

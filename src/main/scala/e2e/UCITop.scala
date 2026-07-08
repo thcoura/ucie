@@ -11,7 +11,7 @@ import protocol._
 import d2dadapter._
 import logphy._
 import afe._
-import freechips.rocketchip.util.AsyncQueueParams
+import ucie.digital.util.AsyncQueueParams
 
 /** UCITop is the main class which instantiates all the three layers of the UCIe
   * protocol stack

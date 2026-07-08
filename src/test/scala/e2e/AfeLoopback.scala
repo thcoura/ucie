@@ -11,9 +11,9 @@ import chisel3.experimental.hierarchy.{
   instantiable,
   public,
 }
-import freechips.rocketchip.diplomacy._
-import freechips.rocketchip.tilelink._
-import freechips.rocketchip.devices.tilelink.{TLTestRAM}
+// import freechips.rocketchip.diplomacy._ // SKIP_TILELINK
+// import freechips.rocketchip.tilelink._ // SKIP_TILELINK
+// import {TLTestRAM} // SKIP_TILELINK
 import protocol._
 
 // @instantiable

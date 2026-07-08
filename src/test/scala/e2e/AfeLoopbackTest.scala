@@ -5,10 +5,10 @@ import chisel3._
 import chisel3.util._
 import chiseltest._
 import org.chipsalliance.cde.config.{Field, Parameters, Config}
-import freechips.rocketchip.tilelink._
-import freechips.rocketchip.util._
-import freechips.rocketchip.prci._
-import freechips.rocketchip.diplomacy._
+// import freechips.rocketchip.tilelink._ // SKIP_TILELINK
+import ucie.digital.util._
+// import freechips.rocketchip.prci._ // SKIP_TILELINK
+// import freechips.rocketchip.diplomacy._ // SKIP_TILELINK
 import chisel3.experimental.BundleLiterals._
 
 // import freechips.rocketchip.unittest._

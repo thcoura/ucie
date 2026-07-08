@@ -4,7 +4,7 @@ package protocol
 import org.chipsalliance.cde.config.{Field, Parameters, Config}
 import scala.collection.immutable.ListMap
 import scala.math.{floor, log10, pow, max}
-import freechips.rocketchip.util.AsyncQueueParams
+import ucie.digital.util.AsyncQueueParams
 
 class ProtoLBTesterConfig(p: ProtoLBTesterParams) extends Config((site, here, up) => {
   case ProtoLBTesterKey => p

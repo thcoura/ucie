@@ -6,7 +6,7 @@ import chisel3.util.{Decoupled, Counter, Reverse}
 import circt.stage.ChiselStage
 import interfaces._
 import chisel3.reflect.DataMirror
-import freechips.rocketchip.util.{AsyncQueue, AsyncQueueParams}
+import ucie.digital.util.{AsyncQueue, AsyncQueueParams}
 
 // This module receives data from logphy and sends to analog
 class TxMainbandSerializer(afeParams: AfeParams) extends Module {

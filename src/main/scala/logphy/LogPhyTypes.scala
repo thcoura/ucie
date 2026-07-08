@@ -3,7 +3,7 @@ package logphy
 
 import chisel3._
 import chisel3.util._
-import freechips.rocketchip.regmapper.{RegField, RegFieldDesc, RegReadFn, RegWriteFn}
+// RegField import removed — vendored util does not include regmapper
 import sideband.SidebandParams
 import interfaces._
 
@@ -153,19 +153,7 @@ class RegisterRWIO[T <: Data](gen: T) extends Bundle {
   val write = Flipped(Decoupled(gen))
   val read = Output(gen)
 
-  def regWrite: RegWriteFn = RegWriteFn((valid, data) => {
-    write.valid := valid
-    write.bits := data.asTypeOf(gen)
-    write.ready
-  })
-
-  def regRead: RegReadFn = RegReadFn(read.asUInt)
-
   def getDataWidth = gen.getWidth
-
-  def regField(desc: RegFieldDesc): RegField = {
-    RegField(gen.getWidth, regRead, regWrite, desc)
-  }
 }
 
 class RegisterRW[T <: Data](val init: T, name: String) {

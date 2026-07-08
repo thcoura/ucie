@@ -4,7 +4,7 @@ package logphy
 import interfaces._
 import chisel3._
 import chisel3.util._
-import freechips.rocketchip.util.{AsyncQueue, AsyncQueueParams}
+import ucie.digital.util.{AsyncQueue, AsyncQueueParams}
 import logphy.Scrambler
 
 object LanesToOne {

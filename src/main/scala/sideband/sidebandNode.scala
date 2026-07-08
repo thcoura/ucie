@@ -4,7 +4,7 @@ package sideband
 import chisel3._
 import chisel3.experimental._
 import chisel3.util._
-import freechips.rocketchip.util.{AsyncQueue, AsyncResetReg, ClockGate}
+import ucie.digital.util.{AsyncQueue, AsyncResetReg, ClockGate}
 import interfaces._
 
 //TODO: 1) L317-318 needs to be revisited

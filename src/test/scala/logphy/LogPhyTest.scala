@@ -2,7 +2,7 @@ package edu.berkeley.cs.ucie.digital
 package logphy
 
 import chiseltest._
-import freechips.rocketchip.util.AsyncQueueParams
+import ucie.digital.util.AsyncQueueParams
 import sideband._
 import interfaces._
 import org.scalatest.flatspec.AnyFlatSpec
